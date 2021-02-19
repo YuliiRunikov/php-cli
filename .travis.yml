@@ -1,0 +1,15 @@
+language: php
+php:
+  - '7.2'
+  - '7.3'
+  - '7.4'
+  - '8.0'
+services: docker
+script:
+  - ./Dockerfile
+notifications:
+  email:
+    recipients:
+      - rynikov12@gmail.com
+    on_success: change
+    on_failure: always  
